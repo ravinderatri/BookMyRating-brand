@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Book My Rating" />
+<meta name="description" content="Book My Rating" />
+<meta name="priestinternational" content="priestinternational.com" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Book My Rating</title>  
+<link rel="shortcut icon" href="images/favicon.png" /> 
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="wrapper"> 
+<nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row"> 
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a id="button-toggle" class="button-toggle-nav inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu ti-align-right"></i></a>
+    </li> 
+     
+  </ul> 
+  <div class="text-left navbar-brand-wrapper">
+    <a class="navbar-brand brand-logo" href="index.html"><img src="images/bmr-logo.png" alt="" ></a>
+    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/bmr-logo.png" alt=""></a>
+     
+  </div> 
+
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item">
+      <div class="search">
+        <a class="search-btn not_click" href="javascript:void(0);"></a>
+        <div class="search-box not-click">
+          <input type="text" class="not-click form-control" placeholder="Search" value="" name="search">
+          <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
+        </div>
+      </div>
+    </li>
+      
+      
+    <li class="nav-item dropdown ">
+      <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="ti-bell"></i>
+        <span class="badge badge-danger notification-status"> </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">  
+        <a href="#" class="dropdown-item">New registered user</a>
+        <a href="#" class="dropdown-item">New invoice received</a>
+       </div>
+    </li> 
+    <li class="nav-item dropdown mr-30">
+      <a class="nav-link top-nav user-avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="ti-user"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-header">
+          <div class="media">
+            <div class="media-body">
+              <h5 class="mt-0 mb-0">Book My Rating</h5>
+              <span>tajender@mail.com</span>
+            </div>
+          </div>
+        </div>
+       
+        <a class="dropdown-item" href="#"><i class="text-danger ti-unlock"></i>Logout</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+ <!-- nav---------------------------end -->
+ 
+
+  <!-- <div class="row"> 
+    <div class="side-menu-fixed">
+     <div class="scrollbar side-menu-bg">
+      <ul class="nav navbar-nav side-menu" id="sidebarnav"> 
+        <li> 
+          <a href="index.html"><i class="ti-home"></i><span class="right-nav-text">Overview </span></a>  
+        </li>
+        
+        <li> 
+          <a href="#"><i class="ti-menu-alt"></i><span class="right-nav-text">Campaign Details </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-layout-media-overlay-alt"></i><span class="right-nav-text">Summary </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-money"></i><span class="right-nav-text">Transaction </span></a>  
+        </li>
+        <li> 
+          <a href="add-campaign.html"><i class="ti-announcement"></i><span class="right-nav-text">Add Campaign </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-headphone"></i><span class="right-nav-text">Help Desk </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-location-arrow"></i><span class="right-nav-text"> Raise Tickets </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-headphone"></i><span class="right-nav-text">Contact Us</span></a>  
+        </li>
+        <li>
+          <a href="#">
+              <i class="ti-location-arrow"></i>
+              <span class="right-nav-text">Locations</span></a>  
+         
+      </li>
+      <li> 
+        <a href="#"><i class="ti-user"></i> 
+          <span class="right-nav-text">Audience</span></a>  </a>  
+      </li>
+      
+     
+      
+      <li>
+          <a href="#">
+              <i class="ti-notepad"></i>
+               
+              <span class="right-nav-text">Reports</span></a>  </a>  
+         
+      </li>
+      <li>
+        <a href="#">
+            <i class="ti-pulse"></i>
+            <span class="right-nav-text">Disputies</span></a>  </a>   
+    </li>
+    
+      
+      <li>
+          <a href="#">
+              <i class="ti-bell"></i>
+              <span class="right-nav-text">Notification</span></a>  </a>    
+      </li>
+      
+      <li>
+          <a href="#">
+              <i class="ti-stats-up"></i>
+              <span class="right-nav-text">Campaign Profs</span></a>     
+      </li>
+      
+      <li>
+          <a href="#">
+              <i class="ti-stats-up"></i>
+              <span class="right-nav-text">Campaign Status</span></a>    
+      </li>
+      
+      <li>
+          <a href="#">
+              <i class="ti-unlock"></i>
+              <span class="right-nav-text">Logout</span></a>     
+          </a>
+      </li>
+    </ul>
+  </div> 
+</div>   -->
+<!-- end-----------------------sidebar--------------- -->
+<div class="container-fluid">
+<div class="mt-4 ml-0"> 
+        <div class="row">
+          <div class="col-sm-6">
+              <h4 class="mb-0"> Install Work</h4>
+          </div>
+          <div class="col-sm-6 no-bg">
+            <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
+              <li class="breadcrumb-item"><a class="default-color">Home</a></li>
+              <li class="breadcrumb-item"><a class="default-color">Install Work</a></li>
+            </ol>
+          </div>
+        </div>
+      
+     
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="card card-statistics mb-30">
+              <div class="card-body">
+                  <h5 class="card-title">Campaign</h5>
+                
+                <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                      <label>   Select your Mobile App Platform for Next</label>
+                      <br>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="Android" name="app" class="custom-control-input">
+                        <label class="custom-control-label" for="Android">Android</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="IOS" name="app" class="custom-control-input">
+                        <label class="custom-control-label" for="IOS">IOS</label>
+                    </div>
+                </div>
+                   
+                  <div class="form-group col-md-6">
+                      <label for="app">Please Enter Your Android App link</label>
+                       <input type="text" class="form-control"  placeholder="Please Enter Your Android App link here">
+                  </div>
+                  <div class="form-group col-md-6"> 
+                      <label for="image">Set Your logo of App</label>
+                      <input type='file' id="imgInp" class="form-control-file" accept="image/gif, image/jpeg, image/png" />
+                      <div class="image"> <img id="logo" src=""/></div>
+                  </div>
+                   
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">App Name</label>
+                    <input type="text" class="form-control"  placeholder="App Name">
+               
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">App Category</label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected="">--Select---</option>
+                    <option>Business</option> 
+                </select>
+                </div>
+                
+                     </div>
+                  </div>
+                </div>
+               
+              </div> 
+          <div class="col-xl-12">
+            <div class="card card-statistics mb-30">
+              <div class="card-body">
+                  <h5 class="card-title">App Details</h5>
+                
+                <div class="form-row">
+                   
+                  <div class="form-group col-md-6">
+                      <label for="app">App Name (Link) - Bussines</label>
+                      <input type="text" class="form-control"  placeholder="Please Enter Your Android App link here">
+                  </div>
+                 
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Campaign Name (Android/IOS)</label>
+                    <input type="text" class="form-control"  placeholder="App Install Demo">
+               
+                </div>
+                <div class="form-group col-md-6"> 
+                  <label>  Choose Your Target Location for your App Install</label>
+                  <br>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="India" name="country" class="custom-control-input">
+                    <label class="custom-control-label" for="India">India</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="World" name="country" class="custom-control-input">
+                    <label class="custom-control-label" for="World"> World Wide</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="other" name="country" class="custom-control-input">
+                  <label class="custom-control-label" for="other"> other</label>
+              </div>
+            </div>
+               
+
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Other</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected="">--Select---</option>
+                        <option>India</option> 
+                        <option>Pakistan</option> 
+                        <option>USA</option> 
+                    </select>
+                  </div>
+                </div>
+              
+              </div>
+              
+              </div>
+          </div>
+         
+         
+          <div class="col-xl-12">
+            <div class="card card-statistics mb-30">
+              <div class="card-body">
+                  <h5 class="card-title">Budget Set</h5>
+                 
+                <div class="form-row">
+                   
+                  <div class="form-group col-md-6">
+                      <label for="app">Budget Set (Eneter your daily budget for your app) </label>
+    <input type="number" class="form-control"  placeholder="500">
+                 <small>(Min Budget Allowed 5000 at BMR)</small> </div>
+                 <div class="form-group col-md-6"></div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Set your bid per install, review rating</label>
+                    <input type="number" class="form-control"  placeholder="10">
+               
+                </div>
+                <div class="form-group col-md-6"> 
+                  <label>  Approx Goal (Installation, Review, Rating) </label>
+                
+                  <input type="number" class="form-control"  placeholder="5000">
+                </div>
+                <div class="form-group col-md-6"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="imidate" name="date" class="custom-control-input">
+                  <label class="custom-control-label" for="imidate">Imidiate</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="custom" name="date" class="custom-control-input">
+                  <label class="custom-control-label" for="custom"> Custom Date</label>
+              </div>
+              <div class="row mt-4">
+              <div class="form-group col-md-6"> 
+                <label> Start Date of Campaign
+                </label>
+              
+                <input type="text" class="form-control"  placeholder="dd-mm-yyyy">
+              </div>
+              <div class="form-group col-md-6"> 
+                <label> End Date of Campaign
+                </label>
+              
+                <input type="text" class="form-control"  placeholder="dd-mm-yyyy">
+              </div>
+            </div>
+            </div>
+              
+                <div class="form-group col-md-6 mt-50">
+                  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" name="signup" value="Sign up">Submit</button>
+                   </div>
+            </div>
+                   
+                </div>
+               
+              </div>
+                  
+              </div>
+          </div>
+        </div>
+      </div>
+        
+   
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="container-fluid">
+            <div class="modal-content">  
+              <div class="modal-body"> 
+                              <div class="row">
+                                  <div class="col-12">     
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                              <div class="px-3 mt-4">
+                                              <h4 class="mt-2">Dear <span>Tajender</span></h4>
+                                              <p>Kindly wait for 24hr for activation of your add campaign as per targeted location and as per your bid stratgy . BMR will learn your all inputs and then will start your app campaign as per your start date of campaign it may take same longer time usaualy us normal for your find campaign details.
+                                                BMR will not support any adults/illegal app location campaign in any circumstances</p>
+                                                <div class="row py-3">
+                                                <div class="form-group col-md-4">
+                                                  <button type="submit" class="btn btn-primary" data-dismiss="modal"   data-toggle="modal" data-target="#exampleModalLong">Continue</button>
+                                                  <button type="submit" class="btn btn-danger" data-dismiss="modal"  data-toggle="modal" data-target=".bd-example-modal-lg" name="signup" value="Sign up">Cancel</button>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                  <button type="submit" class="btn btn-success" data-dismiss="modal"  >Dashboard <i class="fa fa-arrow-right"></i></button>
+                                                   </div> </div>
+                                                  </div>
+                                          </div>  
+                                             
+                                              </div>
+                                          </div>
+                                      </div> 
+                                  </div>
+                              </div>
+                          </div>
+                      </div>  
+
+                      <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="container-fluid">
+                          <div class="modal-content">  
+                            <div class="modal-body"> 
+                                            <div class="row">     
+                                                          <div class="col-xl-12 col-lg-12 col-md-12"> 
+                                                            <h4 class="text-center px-3 mt-2">Set Your Payment Mode</h4>
+                                                            <div class="form-group col-md-12"> 
+                                                              <label>  Choose Your Target Location for your App Install</label>
+                                                              <br>
+                                                              <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="aut" name="pay" class="custom-control-input">
+                                                                <label class="custom-control-label" for="aut">Automatic</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="man" name="pay" class="custom-control-input">
+                                                                <label class="custom-control-label" for="man"> Mannual</label>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="col-md-12 mt-2"> 
+                                                          <label>  Select Your Method</label>
+                                                          <br>
+                                                          <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="Credit" name="mode" class="custom-control-input">
+                                                            <label class="custom-control-label" for="Credit">Credit / Debit Card</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="Net" name="mode" class="custom-control-input">
+                                                            <label class="custom-control-label" for="Net"> Net Banking</label>
+                                                        </div> 
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                          <input type="radio" id="UPI" name="mode" class="custom-control-input">
+                                                          <label class="custom-control-label" for="UPI"> UPI</label>
+                                                      </div> 
+                                                    </div>
+                                                    <div class="col-md-12 mt-4"> 
+                                                                <div class="control-group">
+                                                                  <label class="control-label">Card Holder's Name</label>
+                                                                  <div class="controls">
+                                                                    <input type="text" class="form-control" pattern="\w+ \w+.*" placeholder="Card Holder's Name" required>
+                                                                  </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-12 mt-4"> 
+                                                                <div class="control-group">
+                                                                  <label class="control-label">Card Number</label> 
+                                                                    <div class="row">
+                                                                      <div class="col-lg-3">
+                                                                        <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" placeholder="First four digits" required>
+                                                                      </div>
+                                                                      <div class="col-lg-3">
+                                                                        <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" placeholder="Second four digits" required>
+                                                                      </div>
+                                                                      <div class="col-lg-3">
+                                                                        <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" placeholder="Third four digits" required>
+                                                                      </div>
+                                                                      <div class="col-lg-3">
+                                                                        <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" placeholder="Fourth four digits" required>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-md-12 mt-4">  
+                                                                    <label class="control-label">Card Expiry Date</label>
+                                                                      <div class="row">
+                                                                        <div class="col-lg-4">
+                                                                          <label class="control-label">Month</label>
+                                                                          <select class="form-control">                                                                          
+                                                                            <option>January</option>
+                                                                            <option>...</option>
+                                                                            <option>December</option>
+                                                                          </select></div>
+                                                                        <div class="col-lg-4">
+                                                                          <label class="control-label">Year</label>
+                                                                          <select class="form-control">
+                                                                            <option>2013</option>
+                                                                            <option>...</option>
+                                                                            <option>2015</option>
+                                                                          </select> </div>
+                                                                        <div class="col-lg-4">
+                                                                          <label class="control-label">Card CVV</label>
+                                                                          <input type="text" class="form-control" autocomplete="off" maxlength="3" pattern="\d{3}" placeholder="123" required>
+                                                                        </div>
+                                                                       
+                                                                      </div>
+                                                                    
+                                                                  </div> 
+                                                        
+                                                              <div class="col-md-6 mt-4 mb-3">
+                                                                <button type="submit" class="btn btn-success"  data-dismiss="modal"  value="Sign up">Pay Now</button>
+                                                                 </div> </div>
+                                                                </div>
+                                                        </div>  
+                                                           
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div> 
+            
+     <!-- end-----------------------sidebar--------------- -->
+    
+    </div> 
+  </div>
+ </div>
+</div>
+ 
+ <!-- --footer -->    
+ 
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script><!-- custom -->
+<script src="js/custom.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/plugins-jquery.js"></script> 
+<script>var plugin_path = 'js/index.html';</script> 
+<script src="js/chart-init.js"></script> 
+<script src="js/calendar.init.js"></script> 
+<script src="js/sparkline.init.js"></script> 
+<script src="js/morris.init.js"></script> 
+<script src="js/datepicker.js"></script> 
+<script src="js/sweetalert2.js"></script> 
+<script src="js/toastr.js"></script> 
+<script src="js/validation.js"></script> 
+<script src="js/lobilist.js"></script> 
+<script src="js/custom.js"></script> 
+</body>
+
+<script src="js/jvectormap/jquery-jvectormap-2.0.3.min.js"></script> 
+<script src="js/jvectormap/jquery-jvectormap-in-mill.js"></script> 
+<script src="js/jvectormap/jquery-jvectormap-init.js"></script>  
+<script>
+  $(document).ready(function(){ 
+var current_fs, next_fs, previous_fs; 
+if($(".show").hasClass("first-screen")) {
+$(".prev").css({ 'display' : 'none' });
+}
+
+// Next button
+$(".slide").click(function(){
+
+current_fs = $(this).parent().parent();
+next_fs = $(this).parent().parent().next();
+
+$(".prev").css({ 'display' : 'block' });
+
+$(current_fs).removeClass("show");
+$(next_fs).addClass("show");
+
+$("#progressbar div").eq($(".card2").index(next_fs)).addClass("active");
+
+current_fs.animate({}, {
+step: function() {
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+
+next_fs.css({
+'display': 'block'
+});
+}
+});
+});
+
+// Previous button
+$(".prev").click(function(){
+
+current_fs = $(".show");
+previous_fs = $(".show").prev();
+
+$(current_fs).removeClass("show");
+$(previous_fs).addClass("show");
+
+$(".prev").css({ 'display' : 'block' });
+
+if($(".show").hasClass("first-screen")) {
+$(".prev").css({ 'display' : 'none' });
+}
+
+$("card li").eq($(".card2").index(current_fs)).removeClass("active");
+
+current_fs.animate({}, {
+step: function() {
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+
+previous_fs.css({
+'display': 'block'
+});
+}
+});
+});
+
+});
+</script>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#logo').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+
+  
+</script>
+ </html> 

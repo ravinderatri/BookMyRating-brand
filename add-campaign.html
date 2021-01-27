@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Book My Rating" />
+  <meta name="description" content="Book My Rating" />
+  <meta name="priestinternational" content="priestinternational.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Book My Rating</title>
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    
+      <div class="text-left navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/bmr-logo.png" alt=""></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/bmr-logo.png" alt=""></a>
+
+      </div>
+
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <div class="search">
+            <a class="search-btn not_click" href="javascript:void(0);"></a>
+            <div class="search-box not-click">
+              <input type="text" class="not-click form-control" placeholder="Search" value="" name="search">
+              <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown ">
+          <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="ti-bell"></i>
+            <span class="badge badge-danger notification-status"> </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">
+            <a href="#" class="dropdown-item">New registered user</a>
+            <a href="#" class="dropdown-item">New invoice received</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown mr-30">
+          <a class="nav-link top-nav user-avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="ti-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header">
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-0">Book My Rating</h5>
+                  <span>tajender@mail.com</span>
+                </div>
+              </div>
+            </div>
+
+            <a class="dropdown-item" href="#"><i class="text-danger ti-unlock"></i>Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav---------------------------end -->
+
+
+    <!-- <div class="row"> 
+    <div class="side-menu-fixed">
+     <div class="scrollbar side-menu-bg">
+      <ul class="nav navbar-nav side-menu" id="sidebarnav"> 
+        <li> 
+          <a href="index.html"><i class="ti-home"></i><span class="right-nav-text">Overview </span></a>  
+        </li>
+        
+        <li> 
+          <a href="#"><i class="ti-menu-alt"></i><span class="right-nav-text">Campaign Details </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-layout-media-overlay-alt"></i><span class="right-nav-text">Summary </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-money"></i><span class="right-nav-text">Transaction </span></a>  
+        </li>
+        <li> 
+          <a href="add-campaign.html"><i class="ti-announcement"></i><span class="right-nav-text">Add Campaign </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-headphone"></i><span class="right-nav-text">Help Desk </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-location-arrow"></i><span class="right-nav-text"> Raise Tickets </span></a>  
+        </li>
+        <li> 
+          <a href="#"><i class="ti-headphone"></i><span class="right-nav-text">Contact Us</span></a>  
+        </li>
+        <li>
+          <a href="#">
+              <i class="ti-location-arrow"></i>
+              <span class="right-nav-text">Locations</span></a>  
+         
+      </li>
+      <li> 
+        <a href="#"><i class="ti-user"></i> 
+          <span class="right-nav-text">Audience</span></a>  </a>  
+      </li>
+      
+     
+      
+      <li>
+          <a href="#">
+              <i class="ti-notepad"></i>
+               
+              <span class="right-nav-text">Reports</span></a>  </a>  
+         
+      </li>
+      <li>
+        <a href="#">
+            <i class="ti-pulse"></i>
+            <span class="right-nav-text">Disputies</span></a>  </a>   
+    </li>
+    
+      
+      <li>
+          <a href="#">
+              <i class="ti-bell"></i>
+              <span class="right-nav-text">Notification</span></a>  </a>    
+      </li>
+      
+      <li>
+          <a href="#">
+              <i class="ti-stats-up"></i>
+              <span class="right-nav-text">Campaign Profs</span></a>     
+      </li>
+      
+      <li>
+          <a href="#">
+              <i class="ti-stats-up"></i>
+              <span class="right-nav-text">Campaign Status</span></a>    
+      </li>
+      
+      <li>
+          <a href="#">
+              <i class="ti-unlock"></i>
+              <span class="right-nav-text">Logout</span></a>     
+          </a>
+      </li>
+    </ul>
+  </div> 
+</div>   -->
+    <!-- end-----------------------sidebar--------------- -->
+    <div class="container-fluid">
+      <div class="mt-4 ml-0">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="mb-0"> Add Campaign</h4>
+          </div>
+          <div class="col-sm-6 no-bg">
+            <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
+              <li class="breadcrumb-item"><a class="default-color">Home</a></li>
+              <li class="breadcrumb-item"><a class="default-color">Add Campaign</a></li>
+            </ol>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 mb-30">
+              <h4 class="mb-0 text-center">Kindly Brief Your Goal and Select One</h4>
+            </div>
+
+            <div class="row">
+
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                <div class="card  card-statistics h-100 " data-toggle="modal" data-target=".bd-example-modal-lg">
+                  <div class="card-body">
+                    <div class="clearfix">
+                      <div class="text-center icon-boxs">
+                        <span>
+                          <img src="images/icons/icons8-android-48.png">
+                        </span>
+                      </div>
+                      <div class="text-center">
+
+                        <h4>App Campaign </h4>
+                        <p class="card-text text-dark">(Android/IOS)</p>
+                        <p>Choose Here for fix Installs/Review/Ratings</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                <div class="card card-statistics h-100" data-toggle="modal" data-target="#exampleModalLong">
+                  <div class="card-body">
+                    <div class="clearfix">
+                      <div class="text-center icon-boxs">
+                        <span>
+                          <img src="images/icons/youtube.svg" width="40">
+                        </span>
+                      </div>
+                      <div class="text-center">
+                        <h4>Youtube Campaign </h4>
+                        <p class="card-text text-dark">(Channels/Videos)</p>
+                        <p>For Increase your views and Subscriptions - Set your goal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- <div class="row">
+      <div class="col-xl-6 mb-30">
+        <div class="card card-statistics mb-30">
+            <div class="card-body">
+                <h5 class="card-title">Add Campaign</h5>
+                <form>
+                    <div class="form-group">
+                     
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+  </div> -->
+
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">next <i class="fa fa-phone"></i></button>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="modal custom-modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="container-fluid">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="col-xl-12 col-lg-12 col-md-12 mb-30">
+                        <h4 class="mb-0 mt-2 text-center">Kindly Brief Your Goal and Select One</h4>
+                      </div>
+
+                      <div class="row px-3 mt-3">
+                        <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                          <a href="install-work.html">
+                            <div class="card card-statistics h-100">
+                              <div class="card-body">
+                                <div class="clearfix">
+                                  <div class="float-left">
+                                    <span class="text-danger">
+                                      <img src="images/icons/install.svg" width="40"></span>
+                                  </div>
+                                  <div class="float-right text-right">
+                                    <p class="card-text text-dark">Install</p>
+                                    <h4>0</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                          <div class="card card-statistics h-100">
+                            <div class="card-body">
+                              <div class="clearfix">
+                                <div class="float-left">
+                                  <span class="text-warning">
+                                    <img src="images/icons/eye.svg" width="40"></span>
+                                  </span>
+                                </div>
+                                <div class="float-right text-right">
+                                  <p class="card-text text-dark">Impresions</p>
+                                  <h4>3</h4>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                          <div class="card card-statistics h-100">
+                            <div class="card-body">
+                              <div class="clearfix">
+                                <div class="float-left">
+                                  <span class="text-success">
+                                    <img src="images/icons/rating.svg" width="40"></span>
+                                  </span>
+                                </div>
+                                <div class="float-right text-right">
+                                  <p class="card-text text-dark">Ratings</p>
+                                  <h4>0</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                          <div class="card card-statistics h-100">
+                            <div class="card-body">
+                              <div class="clearfix">
+                                <div class="float-left">
+                                  <span class="text-primary">
+                                    <img src="images/icons/feedback.svg" width="40"></span>
+                                  </span>
+                                </div>
+                                <div class="float-right text-right">
+                                  <p class="card-text text-dark">Review</p>
+                                  <h4>3+</h4>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                          <div class="card card-statistics h-100">
+                            <div class="card-body">
+                              <div class="clearfix">
+                                <div class="float-left">
+                                  <span class="text-primary">
+                                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                                <div class="float-right text-right">
+                                  <p class="card-text text-dark">I+R</p>
+                                  <h4>3+</h4>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                          <div class="card card-statistics h-100">
+                            <div class="card-body">
+                              <div class="clearfix">
+                                <div class="float-left">
+                                  <span class="text-primary">
+                                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                                <div class="float-right text-right">
+                                  <p class="card-text text-dark">I+R+R</p>
+                                  <h4>4</h4>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog"
+          aria-hidden="true">
+
+          <div class="modal-dialog modal-lg">
+            <div class="container-fluid">
+              <div class="modal-content">
+                <div class="modal-body">
+
+
+                  <div class="col-xl-12 col-lg-12 col-md-12 mt-5 mb-30">
+                    <h4 class="mb-0 text-center">Select Your goal as per your need</h4>
+                  </div>
+
+                  <div class="row px-3 mt-3">
+                    <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                      <div class="card card-statistics h-100">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <a href="youtube.html">
+                              <div class="float-left">
+                                <span class="text-danger">
+                                  <img src="images/icons/install.svg" width="40"></span>
+                              </div>
+                              <div class="float-right text-right">
+                                <p class="card-text text-dark">Video likes</p>
+                                <h4>0</h4>
+                              </div>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                      <div class="card card-statistics h-100">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <a href="youtube.html">
+                              <div class="float-left">
+                                <span class="text-warning">
+                                  <img src="images/icons/eye.svg" width="40"></span>
+                                </span>
+                              </div>
+                              <div class="float-right text-right">
+                                <p class="card-text text-dark">Channel Subscribe</p>
+                                <h4>3</h4>
+                              </div>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end-----------------------sidebar--------------- -->
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- --footer -->
+
+
+  <!-- custom -->
+  <script src="js/custom.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/plugins-jquery.js"></script>
+  <script>var plugin_path = 'js/index.html';</script>
+  <script src="js/chart-init.js"></script>
+  <script src="js/calendar.init.js"></script>
+  <script src="js/sparkline.init.js"></script>
+  <script src="js/morris.init.js"></script>
+  <script src="js/datepicker.js"></script>
+  <script src="js/sweetalert2.js"></script>
+  <script src="js/toastr.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/lobilist.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+ 
+
+</html>
